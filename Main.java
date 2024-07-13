@@ -13,8 +13,6 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        // int playerPosition=0;
-        //int computerPosition=0;
 try {
     System.out.println("Welcome to Tic Tac Game!");
     System.out.println("You have two options:");
