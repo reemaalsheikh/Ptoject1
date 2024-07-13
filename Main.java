@@ -15,23 +15,27 @@ public class Main {
         Scanner input = new Scanner(System.in);
         // int playerPosition=0;
         //int computerPosition=0;
+try {
+    System.out.println("Welcome to Tic Tac Game!");
+    System.out.println("You have two options:");
+    System.out.println("1. Play 1 Round");
+    System.out.println("2. Play 3 Rounds");
 
-        System.out.println("Welcome to Tic Tac Game!");
-        System.out.println("You have two options:");
-        System.out.println("1. Play 1 Round");
-        System.out.println("2. Play 3 Rounds");
-
-        int choice = input.nextInt();
-        if (choice == 1) {
-            System.out.println("You are Playing 1 round");
-            playRound(input);
-        } else if (choice == 2) {
-            System.out.println("You are Playing 3 rounds");
-            playthreeRounds(input);
-        } else {
-            System.out.println("Invalid choice! Try again.");
-        }
-
+    int choice = input.nextInt();
+    if (choice == 1) {
+        System.out.println("You are Playing 1 round");
+        playRound(input);
+    } else if (choice == 2) {
+        System.out.println("You are Playing 3 rounds");
+        playthreeRounds(input);
+    } else {
+        System.out.println("Invalid choice! Try again.");
+    }
+}catch (InputMismatchException e){
+    System.out.println("Invalid input! Try again with digits only.");
+}catch (Exception e){
+    System.out.println("Somthing went wrong! Please Try again." + e.getMessage());
+}
 
 
     }//End of the main
