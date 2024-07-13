@@ -147,7 +147,7 @@ try {
 
      char [] [] gameBoard = {{' ', '|',' ','|',' '}, {'-', '+','-','+','-'},
                                   {' ', '|',' ','|',' '}, {'-', '+','-','+','-'}, {' ', '|',' ','|',' '}};
-
+        printGameBoard(gameBoard);
         while(true) {
 
         System.out.println("Please enter your position (1-9): ");
